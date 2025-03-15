@@ -8,6 +8,13 @@ const testController = (req, res) => {
     });
 };
 
+const test2 = (req,res)=>{
+    return res.status(200).json({
+        success: true,
+        message: "Test API is working! new"
+    });
+}
+
 module.exports = {
-    testController
+    testController,test2
 };
